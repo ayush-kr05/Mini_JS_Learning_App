@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning App</title>
+    <style>
+      body{
+        margin: 0;
+      }
+      #nav{
+        width: 100%;
+        text-align: center;
+        background-color: rgb(220, 220, 231);
+        color: rgb(30, 92, 147);
+      }
+      #nav>h1{
+        padding: 5px;
+      }
+      #buttonss{
+        width: 98.7%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(114, 162, 203);
+        padding: 10px;
+        margin: 0;
+      }
+      #buttonss button{
+        padding: 10px;
+        width: 200px;
+        font-size: 15px;
+        background-color: rgb(30, 92, 147);
+        color: white;
+        border-radius: 5px;
+        border: 1px solid navy;
+      }
+      #explain{
+        margin-top: 50px;
+        display: flex;
+        justify-items: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+    
+    
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <h1>Mini JS Learning App</h1>
+    </div>
+    <div id="buttonss">
+      <!--Create buttons namely “Scope”, “Hoisting”, ‘Constructor Functions’, ‘Prototype’ in index.html. Each button will have it's respective name as HTML id. For e.g Scope button will HTML id as "scope". ( Note: no capital letter in id )-->
+   
+    <button id="scope" onclick="showClickedInfo('scope')">Scope</button>
+    <button id="hoisting" onclick="showClickedInfo('hoisting')">Hoisting</button>
+    <button id="constructorfunctions" onclick="showClickedInfo('constructorfunctions')">Constructor Functions</button>
+    <button id="prototype" onclick="showClickedInfo('prototype')">Prototype</button>
+    </div>
+
+    <section class="topics-explain-section">
+        <div id="explain">
+          
+        </div>
+    </section>
+
+   
+
+   
+  </body>
+  <script src="./index.js"></script>
+</html>
